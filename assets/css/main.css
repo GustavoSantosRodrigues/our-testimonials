@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #070c0d;
+    overflow: hidden;
+}
+
+section::before {
+    position: absolute;
+    content: '';
+    width: 2000px;
+    height: 100%;
+    bottom: -70%;
+    border-radius: 50%;
+    background: #3b7cf5 ; 
+
+}
+
+.heading {
+    color: #3b7cf5;
+    display: inline-block;
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    padding: 60px;
+    font-weight: 600;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    width: 15%;
+    bottom: 25%;
+    height: 7px;
+    background-color: #6695cb;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading b {
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wrapper .container {
+    width: 350px;
+    position: relative;
+    color: #fff;
+    background-color: #222;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.wrapper .container .profile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+
+.imgBox {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 8px solid #070c0d;
+    border-radius: 50%;
+}
+
+.imgBox img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imgBox:hover img {
+    filter: saturate(140%);
+    transform: scale(0.95);
+}
+
+.profile h2 {
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p {
+    margin-top: 50px;
+    color: #fff;
+    padding: 0 8px;
+    opacity: 0.8;
+}
+
+.fa-quote-left {
+    font-size: 30px;
+    text-align: left;
+    color: #3b7cf5;
+    display: block;
+}
+
+.fa-quote-right {
+    font-size: 30px;
+    text-align: right;
+    color: #3b7cf5;
+    display: block;
+}
+
+.social i {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social i:hover {
+    background: #3b7cf5;
+    cursor: pointer;
+}
